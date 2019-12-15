@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Digaspot - Товары</title>
+  <title>Digaspot - Товары - Название товара</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -17,6 +17,9 @@
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this page -->
+  <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -243,40 +246,178 @@
                     <h1 class="h3 mb-0 text-gray-800">Название товара</h1>
                     <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"></i> Открыть страницу</a>
                   </div>
-
+                  <!-- статистика -->
                   <div class="row">
 
-                    <div class="container">
-
-                      <div class="card shadow mx-2 my-2">
-                        <div class="card-header py-3">
-                          <h6 class="m-0 font-weight-bold text-primary">Название товара</h6>
-                        </div>
+                    <!-- Earnings (Monthly) Card Example -->
+                    <div class="col-sm-12 col-md-4 mb-4">
+                      <div class="card border-left-primary shadow h-100 py-2">
                         <div class="card-body">
-                          The styling for this basic card example is created by using default Bootstrap utility classes. By using utility classes, the style of the card component can be easily modified with no need for any custom CSS!
+                          <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Просмотров</div>
+                              <div class="h5 mb-0 font-weight-bold text-gray-800">143</div>
+                            </div>
+                            <div class="col-auto">
+                              <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Earnings (Monthly) Card Example -->
+                    <div class="col-sm-12 col-md-4 mb-4">
+                      <div class="card border-left-info shadow h-100 py-2">
+                        <div class="card-body">
+                          <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Покупок</div>
+                              <div class="h5 mb-0 font-weight-bold text-gray-800">10</div>
+                            </div>
+                            <div class="col-auto">
+                              <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Earnings (Monthly) Card Example -->
+                    <div class="col-sm-12 col-md-4 mb-4">
+                      <div class="card border-left-success shadow h-100 py-2">
+                        <div class="card-body">
+                          <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                              <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Заработано</div>
+                              <div class="h5 mb-0 font-weight-bold text-gray-800">10000 ₽</div>
+                            </div>
+                            <div class="col-auto">
+                              <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- embed -->
+                  <div class="row">
+
+                    <div class="col">
+
+                      <div class="card shadow mb-4">
+                        <!-- Card Header - Accordion -->
+                        <a href="#collapseCardExample2" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample2">
+                          <h6 class="m-0 font-weight-bold text-primary">Виджеты</h6>
+                        </a>
+                        <!-- Card Content - Collapse -->
+                        <div class="collapse show" id="collapseCardExample2">
+                          <div class="card-body">
+
+                            <div class="row">
+                              <div class="col">
+
+                                <h5>Кнопка</h5>
+
+                                <div class="row">
+                                  <div class="col">
+
+                                    <div class="text-center mx-2 mt-2">
+                                      <a href="#" class="btn btn-primary btn-icon-split">
+                                        <span class="icon text-white-50">
+                                          <i class="fas fa-heart"></i>
+                                        </span>
+                                        <span class="text">Купить</span>
+                                      </a>
+                                    </div>
+                                    <div class="text-center mb-2">
+                                      <a class="badge badge-light text-gray-600 text-xs" href="http://digaspot.store/">via Digaspot.store</a>
+                                    </div>
+
+                                  </div>
+                                  <div class="col">
+
+                                    <div class="form-group mb-0">
+                                      <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5" readonly></textarea>
+                                      <label for="exampleFormControlTextarea1"class="text-xs">Скопируйте этот код и вставьте в его на свой сайт</label>
+
+
+                                    </div>
+
+
+
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                              <div class="col">
+
+                                <h5>Карточка</h5>
+                                <div class="row">
+
+                                  <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-2">
+
+                                    <div class="text-center">
+                                      <div class="card">
+                                        <div class="card-body row align-items-center">
+
+                                          <div class="col-3">
+                                            <img class="img-fluid rounded mx-auto d-block" style="width: 25rem;" src="https://images.unsplash.com/photo-1513639725746-c5d3e861f32a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=80" alt="">
+                                          </div>
+
+                                          <div class="col-4 text-left">
+
+                                            <p class=" text-lg mb-0 text-gray-900">Название товара</p>
+
+                                            <p class="text-lg mb-0">32₽</p>
+
+                                          </div>
+
+                                          <div class="col text-right">
+
+                                            <a href="#" class="btn btn-primary btn-icon-split">
+                                              <span class="icon text-white-50">
+                                                <i class="fas fa-heart"></i>
+                                              </span>
+                                              <span class="text">Купить</span>
+                                            </a>
+
+                                          </div>
+
+                                        </div>
+
+                                      </div>
+                                    </div>
+                                    <!-- реклама -->
+                                    <div class="text-center">
+                                      <a class="badge badge-light text-gray-600 text-xs" href="http://digaspot.store/">via Digaspot.store</a>
+                                    </div>
+                                  </div>
+
+
+                                  <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+
+                                    <div class="form-group mb-0">
+                                      <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5" readonly></textarea>
+                                      <label for="exampleFormControlTextarea1"class="text-xs">Скопируйте этот код и вставьте в его на свой сайт</label>
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
 
-                      <div class="card shadow mx-2 my-2">
-                        <div class="card-header py-3">
-                          <h6 class="m-0 font-weight-bold text-primary">Название товара</h6>
-                        </div>
-                        <div class="card-body">
-                          The styling for this basic card example is created by using default Bootstrap utility classes. By using utility classes, the style of the card component can be easily modified with no need for any custom CSS!
-                        </div>
-                      </div>
-
-                      <div class="card shadow mx-2 my-2">
-                        <div class="card-header py-3">
-                          <h6 class="m-0 font-weight-bold text-primary">Название товара</h6>
-                        </div>
-                        <div class="card-body">
-                          The styling for this basic card example is created by using default Bootstrap utility classes. By using utility classes, the style of the card component can be easily modified with no need for any custom CSS!
-                        </div>
-                      </div>
 
                     </div>
                   </div>
+
                   <!-- /.container-fluid -->
 
                 </div>
@@ -331,6 +472,13 @@
 
             <!-- Custom scripts for all pages-->
             <script src="js/sb-admin-2.min.js"></script>
+
+            <!-- Page level plugins -->
+            <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+            <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+            <!-- Page level custom scripts -->
+            <script src="js/demo/datatables-demo.js"></script>
 
             <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
