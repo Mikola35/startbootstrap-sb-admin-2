@@ -431,6 +431,8 @@
 												</div>
 											</div>
 
+											<!-- таблица со статистикой -->
+
 											<div class="card shadow mb-4">
 												<!-- Card Header - Accordion -->
 												<a href="#collapseCardExample2" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample2">
@@ -502,9 +504,34 @@
 
 											</div>
 
+											<!-- удаление -->
+											<div class="col text-center my-5">
+												<a class="small text-danger" href="#" data-toggle="modal" data-target="#deletegoodModal" >Удалить этот товар</a>
+											</div>
+
+											<!-- Удаление модалка-->
+											<div class="modal fade" id="deletegoodModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+												<div class="modal-dialog" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h5 class="modal-title" id="exampleModalLabel">Вы действительно хотите удалить этот товар?</h5>
+															<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">×</span>
+															</button>
+														</div>
+														<div class="modal-body">Товар будет удалён безвозвратно. Вся статистика по нему также будет удалена. Это действие нельзя будет отменить.</div>
+														<div class="modal-footer">
+															<button class="btn btn-secondary" type="button" data-dismiss="modal">Отмена</button>
+															<a class="btn btn-danger" href="login.html">Удалить</a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<!-- конец модалки -->
 
 
-											<!-- End of Main Content -->
+
 										</div>
 									</div>
 								</div>
